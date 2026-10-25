@@ -1,0 +1,19 @@
+# Normaliza los finales de linea: en el repo siempre LF, en Windows lo que
+# corresponda. Evita que dos maquinas con distinto core.autocrlf generen
+# diffs de archivo completo y conflictos falsos al hacer merge/pull.
+* text=auto eol=lf
+
+*.java   text
+*.form   text
+*.xml    text
+*.md     text
+*.yml    text
+*.properties text
+
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.jar    binary
